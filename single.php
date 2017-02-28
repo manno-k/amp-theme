@@ -12,7 +12,7 @@
 </head>
 
 <body class="<?php echo esc_attr( $this->get( 'body_class' ) ); ?>">
-	<!-- Google Analyticsを仕様刷る場合はaccountにIDを入力 -->
+	<!-- Google Analyticsを使用する場合はaccountにIDを入力 -->
 	<amp-analytics type="googleanalytics" id="analytics1">
 	    <script type="application/json">
 	        {
