@@ -1,4 +1,6 @@
-<a href="<?php echo esc_url(home_url('/')); ?>" class="back--btn"><?php _e( 'Back to top', 'amp' ); ?></a>
+<div class="btn">
+  <a href="<?php echo esc_url(home_url('/')); ?>" class="back--btn"><?php _e( 'Back to top', 'amp' ); ?></a>
+</div>
 <footer class="amp-wp-footer">
   <div class="footer--site--name">
       © <?php echo date("Y"); ?> <?php bloginfo('name'); ?>.<br>

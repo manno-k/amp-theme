@@ -6,7 +6,14 @@ Author URI: https://awe-some.net/
 License: GNU General Public License v2 or later
 Version: 1.0(2017/02/28)
 ---------------------------------------------------------*/
+<?php
+$baseColor = "rgb(250,250,250)";
+$headerColor ="rgb(218, 158, 164)";
+$linkColor = "#4e91c7";
+$borderColor = "#222222";
+$fontFamily = "font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;";
 
+ ?>
 /* Generic WP styling */
 
 .alignright {
@@ -43,11 +50,11 @@ Version: 1.0(2017/02/28)
 }
 
 body {
-	background-color:rgb(250,250,250);
+	background-color:<?php echo $baseColor ?>;
 	color:rgb(40,40,40);
-	font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
 	font-weight: 300;
 	line-height: 1.75em;
+	 <?php echo $fontFamily ?>
 }
 
 p,
@@ -60,7 +67,7 @@ figure {
 
 a,
 a:visited {
-	color:#4e91c7;
+	color: <?php echo $linkColor ?>;
 }
 
 a:hover,
@@ -94,8 +101,7 @@ blockquote p:last-child {
 .amp-wp-comments-link,
 .amp-wp-footer p,
 .back-to-top {
-font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
-
+ <?php echo $fontFamily ?>
 }
 
 /* Header */
@@ -123,7 +129,7 @@ header svg{
 }
 
 .blog--title{
-	background-color:rgb(218, 158, 164) ;
+	background-color: <?php echo $headerColor ?> ;
 	padding : .875em 0px;
 }
 
@@ -134,7 +140,7 @@ header svg{
 	margin:5px 0;
 	border:solid 1px;
 	border-radius: 50%;
-	border-color:rgb(218, 158, 164);
+	border-color: <?php echo $headerColor ?>;
 	float: left;
 }
 
@@ -356,6 +362,9 @@ amp-carousel > amp-img > img {
 	margin: calc(1.5em - 1px) 0 0;
 	text-align:left;
 }
+.amp-wp-footer a{
+	color:<?php echo $borderColor ?>;
+}
 
 .amp-wp-footer div {
 	margin: 0 auto;
@@ -389,7 +398,9 @@ amp-carousel > amp-img > img {
 .wp_social_bookmarking_light{
 	display:none;
 }
-
+.share-button{
+	display:none;
+}
 .blog--author{
 	padding: 0 16px;
 }
@@ -454,8 +465,10 @@ amp-carousel > amp-img > img {
 
 
 .related--title{
-	border-top:1px solid #222222;
-	border-bottom:1px solid #222222;
+	border-top:1px solid;
+	border-top-color:" <?php echo $borderColor ?>";
+	border-bottom:1px solid ;
+	border-bottom-color:" <?php echo $borderColor ?>";
 	padding:15px 0;
 	text-align:center;
 }
@@ -478,7 +491,7 @@ amp-carousel > amp-img > img {
 	bottom: 11%;
 }
 .related--entry--title div{
-	color:rgb(250,250,250);
+	color: <?php echo $baseColor ?>;
 	background-color: rgba(0,0,0,.5);
 	height: 100%;
   width: 100%;
@@ -491,19 +504,21 @@ amp-carousel > amp-img > img {
 	align-items: center;
 }
 .related--entry--title div span{
+	color:white;
 	padding:5%;
 	font-size:14px;
 	display:block;
 }
 .related time{
-	background-color:rgb(250,250,250);
+	background-color:<?php echo $baseColor ?>;
 	margin: 15px;
   display: block;
 	text-align:center;
 	position: relative;
 }
 .related time:before{
-	border-top: 1px solid #222222;
+	border-top: 1px solid;
+	border-top-color:  <?php echo $borderColor ?>;
 	content: "";
 	position: absolute;
 	top: 50%;
@@ -512,7 +527,7 @@ amp-carousel > amp-img > img {
 }
 
 .related time span {
-    background-color: rgb(250,250,250);
+    background-color: <?php echo $baseColor ?>;
     display: inline-block;
     padding: 0 0.5em;
 		position:relative;
@@ -520,13 +535,13 @@ amp-carousel > amp-img > img {
 
 
 h2{
-	color:rgb(250,250,250);
+	color:<?php echo $baseColor ?>;
 	margin: 30px 0 20px;
 	line-height: 1.3;
 	font-size: 18px;
 	padding: 10px 10px 10px;
 	text-align: left;
-	background: rgb(218, 158, 164);
+	background:  <?php echo $headerColor ?>;
 	border-radius: 3px;
 	line-height: 2rem;
 }
@@ -538,8 +553,10 @@ h3{
 	padding: 15px 0 15px 15px;
 	font-weight: bold;
 	position: relative;
-	    border-top: 1px solid rgba(0,0,0,0.3);
-	border-bottom: 1px solid rgba(0,0,0,.3);
+	border-top: 1px solid;
+	border-top-color:  <?php echo $borderColor ?>;
+	border-bottom: 1px solid;
+	border-bottom-color:  <?php echo $borderColor ?>;
 }
 
 h4{
@@ -548,7 +565,8 @@ h4{
 	padding: 10px 0;
 	font-weight: bold;
 	position: relative;
-	border-bottom: 1px solid rgba(0,0,0,.3);
+	border-bottom: 1px solid;
+	border-bottom-color:  <?php echo $borderColor ?>;
 	text-align:center;
 }
 
@@ -559,13 +577,14 @@ h5{
 	padding: 5px 0 0 15px;
 	font-weight: bold;
 	position: relative;
-	border-left: 4px double rgba(0,0,0,.3);
+	border-left: 4px double;
+	border-left-color:  <?php echo $borderColor ?>;
 }
 
 footer {
   padding: 15px 10px 15px;
   text-align: center;
-  background: rgb(218, 158, 164);
+  background:  <?php echo $headerColor ?>;
   color: #333;
 }
 footer ul {
@@ -580,12 +599,15 @@ footer ul li {
 .footer--site--name{
 	font-size:12px;
 }
+.btn a{
+	color:<?php echo $borderColor ?>;
+}
 .back--btn{
 	width: 150px;
 	text-align: center;
   margin: 0 auto;
   display: block;
-  border: 1px #888 solid;
+  border: 1px #222222 solid;
   border-radius: 5px;
   padding: 5px;
   text-decoration: none;
