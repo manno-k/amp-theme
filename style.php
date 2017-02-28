@@ -391,7 +391,6 @@ amp-carousel > amp-img > img {
 
 .amp--content--wrapper{
 	margin:0 auto;
-	padding: 0 16px;
 	max-width: calc(840px - 32px);
 }
 
