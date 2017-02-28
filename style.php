@@ -11,6 +11,7 @@ $baseColor = "rgb(250,250,250)";
 $headerColor ="rgb(218, 158, 164)";
 $linkColor = "#4e91c7";
 $borderColor = "#222222";
+$textColor = "#222222";
 $fontFamily = "font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;";
 
  ?>
@@ -363,7 +364,7 @@ amp-carousel > amp-img > img {
 	text-align:left;
 }
 .amp-wp-footer a{
-	color:<?php echo $borderColor ?>;
+	color:<?php echo $textColor ?>;
 }
 
 .amp-wp-footer div {
@@ -599,7 +600,7 @@ footer ul li {
 	font-size:12px;
 }
 .btn a{
-	color:<?php echo $borderColor ?>;
+	color:<?php echo $textColor ?>;
 }
 .back--btn{
 	width: 150px;
