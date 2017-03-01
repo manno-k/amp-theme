@@ -652,18 +652,18 @@ footer ul li {
 amp-sidebar{
     background-color:<?php echo $baseColor ?>
 }
-.menu-menu1-container{
+.menu--wrapper{
   width:300px;
 }
-.menu-menu1-container ul{
+.menu--wrapper ul{
   list-style:none;
 }
-.menu-menu1-container li{
+.menu--wrapper li{
   padding: 10px;
   width: 100%;
   border-bottom: 1px solid <?php echo $borderColor ?>;
 }
-.menu-menu1-container li a{
+.menu--wrapper li a{
   text-decoration:none;
 }
 .menu--close{

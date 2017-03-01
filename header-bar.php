@@ -32,5 +32,7 @@
 		<li>MENU</li>
 		<li><button on="tap:sidebar.close"><?php $this->load_parts( array( 'close' ) ); ?></button></li>
 	</ul>
-	<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+	<div class="menu--wrapper">
+		<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+	</div>
 </amp-sidebar>
