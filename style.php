@@ -4,7 +4,7 @@ Theme URI:https://awe-some.net/amp-theme
 Author: K,Manno
 Author URI: https://awe-some.net/
 License: GNU General Public License v2 or later
-Version: 1.0(2017/02/28)
+Version: 1.1(2017/03/01)
 ---------------------------------------------------------*/
 <?php
 $baseColor = "rgb(250,250,250)";
