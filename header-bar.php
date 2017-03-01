@@ -13,7 +13,7 @@
 		</a>
 	</div>
 	<div class="header--share--btn">
-		<div on="tap:sidebar.open"><?php $this->load_parts( array( 'menu' ) ); ?></div>
+		<button on="tap:sidebar.open"><?php $this->load_parts( array( 'menu' ) ); ?></button>
 
 	</div>
 </header>
@@ -30,7 +30,7 @@
 <amp-sidebar id="sidebar" layout="nodisplay" side="right">
 	<ul class="menu--close">
 		<li>MENU</li>
-		<li><div on="tap:sidebar.close"><?php $this->load_parts( array( 'close' ) ); ?></div></li>
+		<li><button on="tap:sidebar.close"><?php $this->load_parts( array( 'close' ) ); ?></button></li>
 	</ul>
 	<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
 </amp-sidebar>
