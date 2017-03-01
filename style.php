@@ -107,6 +107,26 @@ blockquote p:last-child {
 
 /* Header */
 
+.amp-wp-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: calc(840px - 32px);
+  position: fixed;
+  width: 100%;
+  background: <?php echo $baseColor ?>;
+  z-index: 999;
+  height: 60px;
+  border-bottom:1px solid #dddddd;
+  box-shadow:2px 0px 13px 1px #dbdbdb;
+  left: 0;
+  right: 0;
+}
+.blank{
+  height:61px;
+}
+
 .amp-wp-header div {
 	color: black;
 	font-size: 1em;
@@ -128,10 +148,25 @@ header svg{
 	width:150px;
 	padding:10px 16px;
 }
+.header-share-svg{
+  padding:0;
+  margin:0;
+}
+.header--name{
+  flex-basis:90%;
+}
+.header--share--btn{
+  margin: 0;
+  padding: 0;
+  width: 50px;
+  flex-basis: 10%;
+}
 
 .blog--title{
 	background-color: <?php echo $headerColor ?> ;
 	padding : .875em 0px;
+  max-width: calc(840px - 32px);
+  margin: 0 auto;
 }
 
 /* Site Icon */
@@ -607,8 +642,40 @@ footer ul li {
 	text-align: center;
   margin: 0 auto;
   display: block;
-  border: 1px #222222 solid;
+  border: 1px solid;
+  border-color:<?php echo $borderColor ?>;
   border-radius: 5px;
   padding: 5px;
   text-decoration: none;
+}
+
+/* menu */
+amp-sidebar{
+    background-color:<?php echo $baseColor ?>
+}
+.menu-menu1-container{
+  width:300px;
+}
+.menu-menu1-container ul{
+  list-style:none;
+}
+.menu-menu1-container li{
+  padding: 10px;
+  width: 100%;
+  border-bottom: 1px solid <?php echo $borderColor ?>;
+}
+.menu-menu1-container li a{
+  text-decoration:none;
+}
+.menu--close{
+  margin:0px;
+  padding: 10px;
+  background: <?php echo $headerColor ?>;
+  color: <?php echo $baseColor ?> ;
+  fill: <?php echo $baseColor ?>;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style:none;
+  font-weight: bold;
 }
