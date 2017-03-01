@@ -1,6 +1,6 @@
 /*---------------------------------------------------------
 Theme Name: AWESOME
-Theme URI:https://awe-some.net/amp-theme
+Theme URI:https://awe-some.net/amp-theme/
 Author: K,Manno
 Author URI: https://awe-some.net/
 License: GNU General Public License v2 or later
@@ -13,7 +13,6 @@ $linkColor = "#4e91c7";
 $borderColor = "#222222";
 $textColor = "#222222";
 $fontFamily = "font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;";
-
  ?>
 /* Generic WP styling */
 
@@ -678,4 +677,12 @@ amp-sidebar{
   align-items: center;
   list-style:none;
   font-weight: bold;
+}
+button{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  appearance: none;
 }
